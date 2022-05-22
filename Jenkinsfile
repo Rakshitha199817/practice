@@ -2,20 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('compile') {
+        stage('mvn clean package') {
             steps {
                 echo 'Hello World'
-            }
-        }
-        stage('test') {
-            steps {
-                echo 'Hi'
-            }
-        }
-        
-        stage('package'){
-            steps{
-                echo 'bye'
             }
         }
     }
