@@ -4,8 +4,13 @@ pipeline {
     stages {
         stage('mvn clean compile') {
             steps {
-                echo 'mvn clean compile'
+                echo 'Hello World'
             }
+        }
+        stage('mvn clean test'){
+        steps{
+            echo 'hi'
+        }
         }
     }
 }
