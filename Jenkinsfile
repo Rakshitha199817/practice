@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('compile') {
+        stage('mvn compile') {
             steps {
                 echo 'program compiled'
             }
